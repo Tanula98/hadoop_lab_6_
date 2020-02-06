@@ -23,6 +23,7 @@ public class ZookeeperAppConstants {
     // Zookeeper constants
     static final String ZOOKEEPER_PORT = "2181";
     static final String ZOOKEEPER_SERVER = "127.0.0.1";
+    static final int ZOOKEEPER_SESSION_TIMEOUT = 5000;
 
     // Server constants
     static final String HOST = "localhost";
