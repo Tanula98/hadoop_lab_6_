@@ -34,11 +34,10 @@ public class HttpRouter extends AllDirectives {
                         {
                             int redirectCount = Integer.parseInt(count);
                             if (redirectCount != 0) {
-
+                                return ;
                             } else {
-
+                                return completeWithFuture(fetch(http, url));
                             }
-
                         }))
 
                 )
