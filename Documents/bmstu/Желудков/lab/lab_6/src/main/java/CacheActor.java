@@ -16,6 +16,8 @@ public class CacheActor extends AbstractActor {
     @Override
     public Receive createReceive() {
         return ReceiveBuilder.create()
+                //Он принимает две команды —
+                //список серверов (который отправит zookeeper watcher)
                 .match(Servers.class, req->{
                     System.out.println(ZookeeperAppConstants.WATCHER_MESSAGE);
                     serversList = req.getServersList();
