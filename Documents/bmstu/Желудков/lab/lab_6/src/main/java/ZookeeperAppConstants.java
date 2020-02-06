@@ -10,4 +10,8 @@ public class ZookeeperAppConstants {
     // HTTP query parameters
     static final String URL_PARAMETER_NAME = "url";
     static final String COUNT_PARAMETER_NAME = "count";
+
+    // Zookeeper constants
+    static final String ZOOKEEPER_PORT = "2181";
+    static final String ZOOKEEPER_SERVER = "127.0.0.1";
 }
