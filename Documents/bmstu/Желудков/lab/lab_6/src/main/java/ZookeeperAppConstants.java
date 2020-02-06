@@ -9,6 +9,8 @@ public class ZookeeperAppConstants {
     static final String WATCHER_MESSAGE = "Servers list has been updated";
     static final String REDIRECT_MESSAGE = "Redirect to ";
     static final String FETCH_MESSAGE = "fetch ";
+    static final String NOT_ENOUGH_ARGS_ERROR_MESSAGE = "Not enough arguments. Run program with argument [serverPort]";
+
 
 
     // HTTP query parameters
