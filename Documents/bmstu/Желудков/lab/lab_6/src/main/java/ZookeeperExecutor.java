@@ -26,6 +26,7 @@ public class ZookeeperExecutor implements Watcher {
         String serverUrl = "http://" + ZookeeperAppConstants.HOST + ":" + serverPort;
 
         zoo.create(
+                ZookeeperAppConstants.SERVER_NODE,
                 
         );
     }
