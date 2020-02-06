@@ -34,7 +34,7 @@ public class HttpRouter extends AllDirectives {
                         {
                             int redirectCount = Integer.parseInt(count);
                             if (redirectCount != 0) {
-                                return ;
+                                return completeWithFuture(redirect(http, url, redirectCount));
                             } else {
                                 return completeWithFuture(fetch(http, url));
                             }
@@ -45,11 +45,15 @@ public class HttpRouter extends AllDirectives {
 
     }
 
+////осуществляет запрос по url из параметра
     private CompletionStage<HttpResponse> fetch(Http http, String url) {
         return http.singleRequest(HttpRequest.create(url));
     }
 
+    //сначала получает новый урл сервера
+    ////(от актора хранилища конфигурации) и делает запрос к нему с аналогичными
+    ////query параметрами (url, counter) но счетчиком на 1 меньше.
     private CompletionStage<HttpResponse> redirect(Http http, String url, int count) {
-        
+
     }
 }
