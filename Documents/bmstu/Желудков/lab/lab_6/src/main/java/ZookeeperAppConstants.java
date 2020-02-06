@@ -5,4 +5,9 @@ public class ZookeeperAppConstants {
 
 
     static final String CACHE_ACTOR_NAME = "cacheActor";
+
+
+    // HTTP query parameters
+    static final String URL_PARAMETER_NAME = "url";
+    static final String COUNT_PARAMETER_NAME = "count";
 }
