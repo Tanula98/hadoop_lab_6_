@@ -13,6 +13,7 @@ import akka.http.javadsl.server.AllDirectives;
 import akka.http.javadsl.server.Route;
 
 import java.util.concurrent.CompletionStage;
+import java.util.regex.Pattern;
 
 public class HttpRouter extends AllDirectives {
 
@@ -54,6 +55,6 @@ public class HttpRouter extends AllDirectives {
     ////(от актора хранилища конфигурации) и делает запрос к нему с аналогичными
     ////query параметрами (url, counter) но счетчиком на 1 меньше.
     private CompletionStage<HttpResponse> redirect(Http http, String url, int count) {
-
+        return Pattern.
     }
 }
