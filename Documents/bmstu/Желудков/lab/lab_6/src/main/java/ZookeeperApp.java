@@ -1,5 +1,6 @@
 import akka.actor.ActorSystem;
 import akka.http.javadsl.Http;
+import akka.stream.ActorMaterializer;
 import org.apache.zookeeper.KeeperException;
 
 import java.io.IOException;
@@ -14,5 +15,6 @@ public class ZookeeperApp {
 
         ActorSystem system = ActorSystem.create(ZookeeperAppConstants.ACTOR_SYSTEM_NAME);
         final Http http = Http.get(system);
+        final ActorMaterializer
     }
 }
