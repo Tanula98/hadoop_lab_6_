@@ -23,7 +23,7 @@ public class CacheActor extends AbstractActor {
                     serversList = req.getServersList();
                 })
                 //запрос на получение случайного сервера
-                .match()
+                .match(CacheActor.GetRandomServer.class, msg ->)
                 .build();
     }
 
