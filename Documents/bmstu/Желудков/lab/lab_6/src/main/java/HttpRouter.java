@@ -56,6 +56,6 @@ public class HttpRouter extends AllDirectives {
     ////(от актора хранилища конфигурации) и делает запрос к нему с аналогичными
     ////query параметрами (url, counter) но счетчиком на 1 меньше.
     private CompletionStage<HttpResponse> redirect(Http http, String url, int count) {
-        return Patterns.ask(cacheActor, new CacheActor.GetRandomServer())
+        return Patterns.ask(cacheActor, new CacheActor.GetRandomServer(), )
     }
 }
