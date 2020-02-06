@@ -17,7 +17,8 @@ public class ZookeeperExecutor implements Watcher {
         this.cacheActor = cacheActor;
 
         zoo = new ZooKeeper(
-                
+                ZookeeperAppConstants.ZOOKEEPER_SERVER + ":" + ZookeeperAppConstants.ZOOKEEPER_PORT,
+                ZookeeperAppConstants.ZOOKEEPER_SESSION_TIMEOUT,
                 this
         );
         String serverUrl = "http://" + ZookeeperAppConstants.HOST + ":" + serverPort;
