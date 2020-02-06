@@ -15,7 +15,8 @@ public class CacheActor extends AbstractActor {
     @Override
     public Receive createReceive() {
         return ReceiveBuilder.create()
-                .ma
+                .match()
+                .match()
     }
 
 }
