@@ -26,7 +26,7 @@ public class ZookeeperExecutor implements Watcher {
                 ZookeeperAppConstants.SERVER_NODE,
                 serverUrl.getBytes(),
                 ZooDefs.Ids.OPEN_ACL_UNSAFE,
-                CreateMode.
+                CreateMode.EPHEMERAL_SEQUENTIAL
         );
     }
 
