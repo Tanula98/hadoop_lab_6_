@@ -17,6 +17,7 @@ public class CacheActor extends AbstractActor {
         return ReceiveBuilder.create()
                 .match()
                 .match()
+                .build();
     }
 
 }
