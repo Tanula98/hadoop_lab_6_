@@ -4,7 +4,9 @@
 //query параметрами (url, counter) но счетчиком на 1 меньше. Либо осуществляет
 //запрос по url из параметра
 
-public class HttpRouter {
-    
+import akka.http.javadsl.server.AllDirectives;
+
+public class HttpRouter extends AllDirectives {
+
 
 }
