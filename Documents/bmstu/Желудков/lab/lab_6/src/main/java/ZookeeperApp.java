@@ -32,6 +32,10 @@ public class ZookeeperApp {
 
         HttpRouter instance = new HttpRouter(system);
 
+
+        ZookeeperExecutor zookeeperExec = new ZookeeperExecutor(instance.getCacheActor(), serverPort);
+        
+
         final Flow<HttpRequest, HttpResponse, NotUsed> routeFlow =
                 instance.createRoute(http).flow(system, materializer);
 
