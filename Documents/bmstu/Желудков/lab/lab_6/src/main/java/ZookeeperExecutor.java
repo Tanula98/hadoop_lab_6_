@@ -1,8 +1,5 @@
 import akka.actor.ActorRef;
-import org.apache.zookeeper.KeeperException;
-import org.apache.zookeeper.WatchedEvent;
-import org.apache.zookeeper.Watcher;
-import org.apache.zookeeper.ZooKeeper;
+import org.apache.zookeeper.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -28,7 +25,7 @@ public class ZookeeperExecutor implements Watcher {
         zoo.create(
                 ZookeeperAppConstants.SERVER_NODE,
                 serverUrl.getBytes(),
-                ZooDefs.I
+                ZooDefs.Ids.
         );
     }
 
