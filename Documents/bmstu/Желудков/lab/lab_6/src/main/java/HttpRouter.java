@@ -28,7 +28,7 @@ public class HttpRouter extends AllDirectives {
                 get(() -> parameter(ZookeeperAppConstants.URL_PARAMETER_NAME, (url) ->
                         parameter(ZookeeperAppConstants.COUNT_PARAMETER_NAME, (count) ->
                         {
-                            
+
                         }))
 
                 )
