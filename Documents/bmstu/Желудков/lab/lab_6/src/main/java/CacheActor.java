@@ -4,6 +4,7 @@ import akka.japi.pf.ReceiveBuilder;
 
 import java.util.List;
 
+//создаем актор хранилище конфигурации.
 public class CacheActor extends AbstractActor {
 
     private List<String> serversList;
