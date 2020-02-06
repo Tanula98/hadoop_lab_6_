@@ -18,6 +18,7 @@ public class ZookeeperExecutor implements Watcher {
 
         zoo = new ZooKeeper(
                 
+                this
         );
         String serverUrl = "http://" + ZookeeperAppConstants.HOST + ":" + serverPort;
 
