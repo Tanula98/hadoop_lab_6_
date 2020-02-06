@@ -6,6 +6,7 @@ public class ZookeeperApp {
 
     public static void main(String[] args) throws IOException, KeeperException, InterruptedException {
 
-
+        int serverPort;
+        
     }
 }
