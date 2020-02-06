@@ -8,5 +8,6 @@ public class ZookeeperApp {
 
         int serverPort;
         serverPort = Integer.parseInt(args[0]);
+        
     }
 }
