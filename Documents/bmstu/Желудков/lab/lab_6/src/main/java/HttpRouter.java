@@ -17,4 +17,10 @@ public class HttpRouter extends AllDirectives {
     }
 
 
+    public ActorRef getCacheActor() {
+        return cacheActor;
+    }
+
+    
+
 }
