@@ -27,11 +27,13 @@ public class CacheActor extends AbstractActor {
                 .match(CacheActor.GetRandomServer.class, msg -> {
                     int randServerIdx = new Random().nextInt(serversList.size());
                     String randServer = serversList.get(randServerIdx);
+                    System.out.println(ZookeeperAppConstants.REDIRECT_MESSAGE + randServer);
+                    sender().tell(randServer, self());
                 })
                 .build();
     }
 
-    static class GetRandomServer {
+    private static class GetRandomServer {
     }
 
 }
