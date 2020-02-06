@@ -16,7 +16,9 @@ public class ZookeeperExecutor implements Watcher {
     public ZookeeperExecutor(ActorRef cacheActor, int serverPort) throws IOException, KeeperException, InterruptedException {
         this.cacheActor = cacheActor;
 
-        zoo = 
+        zoo = new ZooKeeper(
+                
+        );
         String serverUrl = "http://" + ZookeeperAppConstants.HOST + ":" + serverPort;
 
     }
