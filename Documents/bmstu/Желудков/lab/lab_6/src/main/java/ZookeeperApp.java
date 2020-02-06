@@ -16,5 +16,7 @@ public class ZookeeperApp {
         ActorSystem system = ActorSystem.create(ZookeeperAppConstants.ACTOR_SYSTEM_NAME);
         final Http http = Http.get(system);
         final ActorMaterializer materializer = ActorMaterializer.create(system);
+
+        HttpRouter 
     }
 }
