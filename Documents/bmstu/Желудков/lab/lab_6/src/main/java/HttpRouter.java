@@ -58,7 +58,9 @@ public class HttpRouter extends AllDirectives {
     ////query параметрами (url, counter) но счетчиком на 1 меньше.
     private CompletionStage<HttpResponse> redirect(Http http, String url, int count) {
         return Patterns.ask(cacheActor, new CacheActor.GetRandomServer(), Duration.ofMillis(5000))
-                .thenCompose(randServer ->)
+                .thenCompose(randServer ->{
+                    
+                })
 
     }
 }
