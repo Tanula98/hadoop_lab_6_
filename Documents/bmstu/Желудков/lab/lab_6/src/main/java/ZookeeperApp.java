@@ -28,7 +28,7 @@ public class ZookeeperApp {
         final Flow<HttpRequest, HttpResponse, NotUsed> routeFlow =
                 instance.createRoute(http).flow(system, materializer);
 
-        final CompletionStage<ServerBinding> binding
+        final CompletionStage<ServerBinding> binding = http.bindAndHandle()
 
 
 
