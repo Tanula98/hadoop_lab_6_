@@ -7,8 +7,12 @@
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.http.javadsl.Http;
+import akka.http.javadsl.model.HttpRequest;
+import akka.http.javadsl.model.HttpResponse;
 import akka.http.javadsl.server.AllDirectives;
 import akka.http.javadsl.server.Route;
+
+import java.util.concurrent.CompletionStage;
 
 public class HttpRouter extends AllDirectives {
 
@@ -30,7 +34,7 @@ public class HttpRouter extends AllDirectives {
                         {
                             int redirectCount = Integer.parseInt(count);
                             if (redirectCount != 0) {
-                                
+
                             } else {
 
                             }
@@ -40,6 +44,10 @@ public class HttpRouter extends AllDirectives {
                 )
         );
 
+    }
+
+    private CompletionStage<HttpResponse> fetch(Http http, String url) {
+        return http.singleRequest(HttpRequest.create(url));
     }
 
 }
