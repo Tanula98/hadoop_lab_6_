@@ -18,7 +18,9 @@ public class ZookeeperExecutor implements Watcher {
 
             List<String> serversNodes = zoo.getChildren(ZookeeperAppConstants.SERVERS_NODE, this);
             List<String> serversList = new ArrayList<>();
-            
+
+        } catch {
+
         }
 
     }
