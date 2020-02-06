@@ -19,5 +19,8 @@ public class ZookeeperAppConstants {
     static final String ZOOKEEPER_PORT = "2181";
     static final String ZOOKEEPER_SERVER = "127.0.0.1";
 
+    // Server constants
+    static final String HOST = "localhost";
+
 
 }
