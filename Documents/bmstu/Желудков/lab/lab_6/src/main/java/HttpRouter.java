@@ -69,7 +69,7 @@ public class HttpRouter extends AllDirectives {
                             )).toString();
 
                     return fetch(http, redirectUrl);
-                })
+                });
 
     }
 }
