@@ -66,7 +66,7 @@ public class HttpRouter extends AllDirectives {
                             .query(Query.create(
                                     Pair.create(ZookeeperAppConstants.URL_PARAMETER_NAME, url),
                                     Pair.create(ZookeeperAppConstants.COUNT_PARAMETER_NAME, Integer.toString(count - 1))
-                            )).toString()
+                            )).toString();
 
                 })
 
