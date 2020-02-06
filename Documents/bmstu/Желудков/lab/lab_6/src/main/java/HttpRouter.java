@@ -25,7 +25,7 @@ public class HttpRouter extends AllDirectives {
 
     Route createRoute(Http http) {
         return route(
-                get(() -> parameter(ZookeeperAppConstants.URL_PARAMETER_NAME, (url))
+                get(() -> parameter(ZookeeperAppConstants.URL_PARAMETER_NAME, (url) -> )
 
                 )
         );
