@@ -13,7 +13,7 @@ public class ZookeeperExecutor implements Watcher {
 
         try {
 
-            List<String> serversNodes = zoo.getChildren();
+            List<String> serversNodes = zoo.getChildren(ZookeeperAppConstants.SERVERS_NODE, this);
         }
 
     }
