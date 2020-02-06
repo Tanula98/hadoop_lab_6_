@@ -11,5 +11,9 @@ public class ZookeeperExecutor implements Watcher {
     @Override
     public void process(WatchedEvent watchedEvent) {
 
+        try {
+
+        }
+
     }
 }
