@@ -14,4 +14,6 @@ public class ZookeeperAppConstants {
     // Zookeeper constants
     static final String ZOOKEEPER_PORT = "2181";
     static final String ZOOKEEPER_SERVER = "127.0.0.1";
+
+
 }

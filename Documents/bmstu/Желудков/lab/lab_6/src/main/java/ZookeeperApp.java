@@ -7,6 +7,6 @@ public class ZookeeperApp {
     public static void main(String[] args) throws IOException, KeeperException, InterruptedException {
 
         int serverPort;
-        serverPort = Integer.parseInt(args[ZookeeperAppConstants.SERVER_PORT_IDX_IN_ARGS]);
+        serverPort = Integer.parseInt(args[0]);
     }
 }
