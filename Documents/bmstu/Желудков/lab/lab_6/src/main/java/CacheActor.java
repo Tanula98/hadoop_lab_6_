@@ -26,6 +26,7 @@ public class CacheActor extends AbstractActor {
                 //запрос на получение случайного сервера
                 .match(CacheActor.GetRandomServer.class, msg -> {
                     int randServerIdx = new Random().nextInt(serversList.size());
+                    String randServer = serversList.get(randServerIdx);
                 })
                 .build();
     }
