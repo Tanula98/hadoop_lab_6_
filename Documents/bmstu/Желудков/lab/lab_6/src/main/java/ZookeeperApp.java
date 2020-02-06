@@ -36,6 +36,11 @@ public class ZookeeperApp {
         );
 
 
+        System.in.read();
+        binding
+                .thenCompose(ServerBinding::unbind)
+                .thenAccept(unbound -> system.terminate());
+
 
     }
 }
