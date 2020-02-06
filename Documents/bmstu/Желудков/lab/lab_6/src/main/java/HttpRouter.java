@@ -30,7 +30,7 @@ public class HttpRouter extends AllDirectives {
                         {
                             int redirectCount = Integer.parseInt(count);
                             if (redirectCount != 0) {
-                                return completeWithFuture(redirect(http, url, redirectCount));
+                                
                             } else {
 
                             }
