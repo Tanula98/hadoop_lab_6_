@@ -14,6 +14,7 @@ public class ZookeeperExecutor implements Watcher {
     private ActorRef cacheActor;
 
     public ZookeeperExecutor(ActorRef cacheActor, int serverPort) throws IOException, KeeperException, InterruptedException {
+        this.cacheActor = cacheActor;
         
     }
 
