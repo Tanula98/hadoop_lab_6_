@@ -3,6 +3,7 @@ import akka.actor.Props;
 import akka.japi.pf.ReceiveBuilder;
 
 import java.util.List;
+import java.util.Random;
 
 //создаем актор хранилище конфигурации.
 public class CacheActor extends AbstractActor {
@@ -24,7 +25,7 @@ public class CacheActor extends AbstractActor {
                 })
                 //запрос на получение случайного сервера
                 .match(CacheActor.GetRandomServer.class, msg -> {
-                    
+                    int randServerIdx = new Random().nextInt(serversList.size());
                 })
                 .build();
     }
