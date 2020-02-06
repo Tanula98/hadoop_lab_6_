@@ -4,6 +4,7 @@ import org.apache.zookeeper.WatchedEvent;
 import org.apache.zookeeper.Watcher;
 import org.apache.zookeeper.ZooKeeper;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,6 +12,10 @@ public class ZookeeperExecutor implements Watcher {
 
     private ZooKeeper zoo;
     private ActorRef cacheActor;
+
+    public ZookeeperExecutor(ActorRef cacheActor, int serverPort) throws IOException, KeeperException, InterruptedException {
+        
+    }
 
     @Override
     public void process(WatchedEvent watchedEvent) {
