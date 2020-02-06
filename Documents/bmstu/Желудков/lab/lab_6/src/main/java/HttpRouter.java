@@ -67,7 +67,7 @@ public class HttpRouter extends AllDirectives {
                                     Pair.create(ZookeeperAppConstants.URL_PARAMETER_NAME, url),
                                     Pair.create(ZookeeperAppConstants.COUNT_PARAMETER_NAME, Integer.toString(count - 1))
                             )).toString();
-
+                    System.out.println(ZookeeperAppConstants.FETCH_MESSAGE + redirectUrl);
                     return fetch(http, redirectUrl);
                 });
 
