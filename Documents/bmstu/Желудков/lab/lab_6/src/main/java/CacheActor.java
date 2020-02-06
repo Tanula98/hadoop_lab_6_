@@ -33,7 +33,7 @@ public class CacheActor extends AbstractActor {
                 .build();
     }
 
-    private static class GetRandomServer {
+    static class GetRandomServer {
     }
 
 }
