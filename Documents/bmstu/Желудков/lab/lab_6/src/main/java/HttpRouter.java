@@ -9,6 +9,7 @@ import akka.actor.ActorSystem;
 import akka.http.javadsl.Http;
 import akka.http.javadsl.model.HttpRequest;
 import akka.http.javadsl.model.HttpResponse;
+import akka.http.javadsl.model.Query;
 import akka.http.javadsl.model.Uri;
 import akka.http.javadsl.server.AllDirectives;
 import akka.http.javadsl.server.Route;
@@ -61,7 +62,9 @@ public class HttpRouter extends AllDirectives {
         return Patterns.ask(cacheActor, new CacheActor.GetRandomServer(), Duration.ofMillis(5000))
                 .thenCompose(randServer ->{
                     String redirectUrl = Uri.create((String) randServer)
-                            .query()
+                            .query(Query.create(
+                                    
+                            ))
 
                 })
 
