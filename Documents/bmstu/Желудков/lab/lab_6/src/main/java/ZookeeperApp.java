@@ -17,8 +17,14 @@ public class ZookeeperApp {
     public static void main(String[] args) throws IOException, KeeperException, InterruptedException {
 
         int serverPort;
-        serverPort = Integer.parseInt(args[0]);
+        //serverPort = Integer.parseInt(args[0]);
 
+        if (args.length < 1) {
+            System.err.println(ZookeeperAppConstants.NOT_ENOUGH_ARGS_ERROR_MESSAGE);
+            return;
+        } else {
+            serverPort = Integer.parseInt(args[0]);
+        }
 
         ActorSystem system = ActorSystem.create(ZookeeperAppConstants.ACTOR_SYSTEM_NAME);
         final Http http = Http.get(system);
