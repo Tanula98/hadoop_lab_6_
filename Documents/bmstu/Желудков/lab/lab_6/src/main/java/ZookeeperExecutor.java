@@ -21,7 +21,7 @@ public class ZookeeperExecutor implements Watcher {
             List<String> serversList = new ArrayList<>();
 
         } catch (KeeperException | InterruptedException e){
-
+            e.printStackTrace();
         }
 
     }
