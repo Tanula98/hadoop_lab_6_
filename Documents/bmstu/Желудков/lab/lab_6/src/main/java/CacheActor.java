@@ -22,6 +22,7 @@ public class CacheActor extends AbstractActor {
                     System.out.println(ZookeeperAppConstants.WATCHER_MESSAGE);
                     serversList = req.getServersList();
                 })
+                //запрос на получение случайного сервера
                 .match()
                 .build();
     }
