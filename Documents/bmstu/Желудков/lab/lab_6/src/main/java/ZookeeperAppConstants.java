@@ -1,5 +1,11 @@
 public class ZookeeperAppConstants {
 
+
+    // Actors constants
+    static final String ACTOR_SYSTEM_NAME = "routes";
+    static final String CACHE_ACTOR_NAME = "cacheActor";
+
+
     static final String WATCHER_MESSAGE = "Servers list has been updated";
     static final String REDIRECT_MESSAGE = "Redirect to ";
     static final String FETCH_MESSAGE = "fetch ";
