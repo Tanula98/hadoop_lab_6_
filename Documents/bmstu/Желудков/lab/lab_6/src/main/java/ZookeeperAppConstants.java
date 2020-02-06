@@ -1,7 +1,9 @@
 public class ZookeeperAppConstants {
 
 
-    static final String SERVERS_NODE = ;
+    static final String SERVERS_NODE = "/servers";
+    static final String SERVERS_NODES_PATH = SERVERS_NODE + "/";
+    static final String SERVER_NODE = SERVERS_NODES_PATH + "s";
     // Actors constants
     static final String ACTOR_SYSTEM_NAME = "routes";
     static final String CACHE_ACTOR_NAME = "cacheActor";
