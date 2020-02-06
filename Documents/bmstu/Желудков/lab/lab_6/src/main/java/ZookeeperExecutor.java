@@ -28,7 +28,7 @@ public class ZookeeperExecutor implements Watcher {
         zoo.create(
                 ZookeeperAppConstants.SERVER_NODE,
                 serverUrl.getBytes(),
-                ZooDefs.
+                ZooDefs.I
         );
     }
 
