@@ -13,6 +13,6 @@ public class ZookeeperApp {
 
 
         ActorSystem system = ActorSystem.create(ZookeeperAppConstants.ACTOR_SYSTEM_NAME);
-        final Http 
+        final Http http = Http.get(system);
     }
 }
