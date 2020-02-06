@@ -27,4 +27,7 @@ public class CacheActor extends AbstractActor {
                 .build();
     }
 
+    static class GetRandomServer {
+    }
+
 }
