@@ -31,7 +31,7 @@ public class ZookeeperApp {
 
         final CompletionStage<ServerBinding> binding = http.bindAndHandle(
                 routeFlow,
-                ConnectHttp.toHost(),
+                ConnectHttp.toHost(ZookeeperAppConstants.HOST, serverPort),
                 materializer
         );
 
