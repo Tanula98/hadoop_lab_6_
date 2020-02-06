@@ -13,6 +13,7 @@ import akka.http.javadsl.model.Query;
 import akka.http.javadsl.model.Uri;
 import akka.http.javadsl.server.AllDirectives;
 import akka.http.javadsl.server.Route;
+import akka.japi.Pair;
 import akka.pattern.Patterns;
 
 import java.time.Duration;
@@ -63,7 +64,8 @@ public class HttpRouter extends AllDirectives {
                 .thenCompose(randServer ->{
                     String redirectUrl = Uri.create((String) randServer)
                             .query(Query.create(
-                                    
+                                    Pair.create(ZookeeperAppConstants.URL_PARAMETER_NAME, url),
+                                    Pair.create(ZookeeperAppConstants.COUNT_PARAMETER_NAME, Integer.toString(count - 1))
                             ))
 
                 })
