@@ -61,6 +61,7 @@ public class HttpRouter extends AllDirectives {
         return Patterns.ask(cacheActor, new CacheActor.GetRandomServer(), Duration.ofMillis(5000))
                 .thenCompose(randServer ->{
                     String redirectUrl = Uri.create((String) randServer)
+                            .query()
 
                 })
 
