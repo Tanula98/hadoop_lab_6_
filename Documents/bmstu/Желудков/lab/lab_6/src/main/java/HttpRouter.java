@@ -29,7 +29,11 @@ public class HttpRouter extends AllDirectives {
                         parameter(ZookeeperAppConstants.COUNT_PARAMETER_NAME, (count) ->
                         {
                             int redirectCount = Integer.parseInt(count);
-                            
+                            if (redirectCount != 0) {
+                                return completeWithFuture(redirect(http, url, redirectCount));
+                            } else {
+
+                            }
 
                         }))
 
