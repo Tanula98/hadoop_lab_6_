@@ -6,7 +6,9 @@
 
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
+import akka.http.javadsl.Http;
 import akka.http.javadsl.server.AllDirectives;
+import akka.http.javadsl.server.Route;
 
 public class HttpRouter extends AllDirectives {
 
@@ -21,6 +23,8 @@ public class HttpRouter extends AllDirectives {
         return cacheActor;
     }
 
-    
+    Route createRoute(Http http) {
+
+    }
 
 }
