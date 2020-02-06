@@ -15,7 +15,9 @@ public class CacheActor extends AbstractActor {
     @Override
     public Receive createReceive() {
         return ReceiveBuilder.create()
-                .match()
+                .match(Servers.class, req -> {
+                    System.out.println(ZookeeperAppConstants.WATCHER_MESSAGE);
+                    serversList = req.getServersList();)
                 .match()
                 .build();
     }
