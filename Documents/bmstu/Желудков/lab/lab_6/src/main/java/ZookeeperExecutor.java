@@ -1,4 +1,5 @@
 import akka.actor.ActorRef;
+import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.WatchedEvent;
 import org.apache.zookeeper.Watcher;
 import org.apache.zookeeper.ZooKeeper;
@@ -19,7 +20,7 @@ public class ZookeeperExecutor implements Watcher {
             List<String> serversNodes = zoo.getChildren(ZookeeperAppConstants.SERVERS_NODE, this);
             List<String> serversList = new ArrayList<>();
 
-        } catch {
+        } catch (KeeperException | InterruptedException e){
 
         }
 
