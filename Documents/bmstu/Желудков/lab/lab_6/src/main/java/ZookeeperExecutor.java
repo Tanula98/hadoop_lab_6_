@@ -21,8 +21,11 @@ public class ZookeeperExecutor implements Watcher {
                 ZookeeperAppConstants.ZOOKEEPER_SESSION_TIMEOUT,
                 this
         );
+
+
         String serverUrl = "http://" + ZookeeperAppConstants.HOST + ":" + serverPort;
 
+        
     }
 
     @Override
