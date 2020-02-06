@@ -5,11 +5,16 @@
 //запрос по url из параметра
 
 import akka.actor.ActorRef;
+import akka.actor.ActorSystem;
 import akka.http.javadsl.server.AllDirectives;
 
 public class HttpRouter extends AllDirectives {
 
     private final ActorRef cacheActor;
+
+    HttpRouter(ActorSystem system) {
+        cacheActor = system.actorOf(CacheActor.props(), ZookeeperAppConstants.CACHE_ACTOR_NAME);
+    }
 
 
 }
