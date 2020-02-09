@@ -9,7 +9,7 @@ public class ZookeeperExecutor implements Watcher {
 
     private ZooKeeper zoo;
 
-    ZookeeperExecutor(int serverPort) throws IOException, KeeperException, InterruptedException {
+    ZookeeperExecutor(ActorRef cacheActor, int serverPort) throws IOException, KeeperException, InterruptedException {
 
         //создаем доступ к zookeeper
         zoo = new ZooKeeper(
