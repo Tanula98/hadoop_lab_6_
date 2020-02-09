@@ -8,6 +8,7 @@ import java.util.List;
 public class ZookeeperExecutor implements Watcher {
 
     private ZooKeeper zoo;
+    private ActorRef cacheActor;
 
     ZookeeperExecutor(ActorRef cacheActor, int serverPort) throws IOException, KeeperException, InterruptedException {
 
