@@ -11,6 +11,7 @@ public class ZookeeperExecutor implements Watcher {
 
     ZookeeperExecutor(ActorRef cacheActor, int serverPort) throws IOException, KeeperException, InterruptedException {
 
+        this.cacheActor = cacheActor;
         //создаем доступ к zookeeper
         zoo = new ZooKeeper(
                 ZookeeperAppConstants.ZOOKEEPER_SERVER + ":" + ZookeeperAppConstants.ZOOKEEPER_PORT,
