@@ -163,7 +163,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581254990479" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581255035375" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -178,7 +178,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="ZookeeperApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="ZookeeperApp" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ZookeeperApp" />
       <module name="lab_6" />
       <option name="PROGRAM_PARAMETERS" value="8081" />
