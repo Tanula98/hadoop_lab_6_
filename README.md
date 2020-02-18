@@ -1,2 +1,3 @@
-# hadoop_lab_4
-# hadoop_lab_7
+# hadoop_lab_6
+
+
